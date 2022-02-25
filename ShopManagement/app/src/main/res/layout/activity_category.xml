@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Category_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <Button
+        android:id="@+id/add_cust"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:text="add customer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/round_corner"
+
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <Button
+        android:id="@+id/create_list"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:background="@drawable/round_corner"
+        android:text="create list"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_cust"
+        app:layout_constraintVertical_bias="0.069" />
+
+    <Button
+        android:id="@+id/view_cust"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:text="view customer"
+        android:background="@drawable/round_corner"
+
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_list"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <Button
+        android:id="@+id/view_list"
+        android:layout_width="328dp"
+        android:layout_height="45dp"
+        android:text="view list"
+        android:background="@drawable/round_corner"
+        android:textColor="@color/colorAccent"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_cust"
+        app:layout_constraintVertical_bias="0.142"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

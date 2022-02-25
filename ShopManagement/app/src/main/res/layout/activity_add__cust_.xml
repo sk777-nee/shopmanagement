@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Add_Cust_Activity">
+
+
+ <Button
+     android:id="@+id/Btn_Add_cust"
+     android:layout_width="197dp"
+     android:layout_height="42dp"
+     android:background="@drawable/round_corner"
+
+     android:text="Save"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/et_price"
+     app:layout_constraintVertical_bias="0.405" />
+
+ <EditText
+     android:id="@+id/et_cust_name"
+     android:layout_width="374dp"
+     android:layout_height="42dp"
+     android:ems="10"
+     android:inputType="textPersonName"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.102"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/tv_cust_name"
+     app:layout_constraintVertical_bias="0.029" />
+
+ <EditText
+     android:id="@+id/et_product_name"
+     android:layout_width="382dp"
+     android:layout_height="46dp"
+     android:ems="10"
+     android:inputType="textPersonName"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.105"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/tv_product_name"
+     app:layout_constraintVertical_bias="0.029" />
+
+ <EditText
+     android:id="@+id/et_price"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:ems="10"
+     android:inputType="number"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.089"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/tv_price"
+     app:layout_constraintVertical_bias="0.189" />
+
+ <EditText
+     android:id="@+id/et_catno"
+     android:layout_width="231dp"
+     android:layout_height="49dp"
+     android:ems="10"
+     android:hint="enter Category G or F"
+     android:inputType="text"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.138"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/tv_cat"
+     app:layout_constraintVertical_bias="0.077" />
+
+ <EditText
+     android:id="@+id/et_mob"
+     android:layout_width="292dp"
+     android:layout_height="45dp"
+     android:ems="10"
+     android:hint="Enter Mobile no"
+     android:inputType="phone"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.168"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/et_catno"
+     app:layout_constraintVertical_bias="0.059" />
+
+ <TextView
+     android:id="@+id/tv_cust_name"
+     android:layout_width="126dp"
+     android:layout_height="25dp"
+     android:layout_marginBottom="216dp"
+     android:text="Customer Name"
+     android:textColor="@color/colorAccent"
+     android:textColorHighlight="@color/colorPrimaryDark"
+     android:textSize="20sp"
+
+     android:textStyle="bold"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.06"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/set_toolbar"
+     app:layout_constraintVertical_bias="0.022" />
+
+ <TextView
+     android:id="@+id/tv_product_name"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Product Name"
+     android:textColor="@color/colorAccent"
+     android:textColorHighlight="@color/colorPrimaryDark"
+     android:textSize="20sp"
+     android:textStyle="bold"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.065"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/et_cust_name"
+     app:layout_constraintVertical_bias="0.029" />
+
+ <TextView
+     android:id="@+id/tv_cat"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Category"
+     android:textColor="@color/colorAccent"
+     android:textColorHighlight="@color/colorPrimaryDark"
+     android:textSize="20sp"
+     android:textStyle="bold"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.075"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/et_product_name"
+     app:layout_constraintVertical_bias="0.039" />
+
+ <TextView
+     android:id="@+id/tv_price"
+
+     android:layout_width="103dp"
+     android:layout_height="34dp"
+     android:text="Price"
+     android:textColor="@color/colorAccent"
+     android:textColorHighlight="@color/colorPrimaryDark"
+     android:textSize="20sp"
+
+     android:textStyle="bold"
+
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.107"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/et_mob"
+     app:layout_constraintVertical_bias="0.179" />
+
+ <androidx.appcompat.widget.Toolbar
+     android:id="@+id/set_toolbar"
+     android:layout_width="410dp"
+     android:layout_height="42dp"
+     android:background="?attr/colorPrimary"
+     android:minHeight="?attr/actionBarSize"
+     android:theme="?attr/actionBarTheme"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintHorizontal_bias="0.444"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_bias="0.0"
+     app:subtitleTextColor="@color/colorAccent"
+
+
+     tools:ignore="MissingConstraints" />
+
+ <androidx.constraintlayout.widget.Guideline
+     android:id="@+id/guideline2"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     app:layout_constraintGuide_begin="-275dp" />
+
+ <androidx.constraintlayout.widget.Guideline
+     android:id="@+id/guideline"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     app:layout_constraintGuide_begin="20dp" />
+
+ <androidx.constraintlayout.widget.Guideline
+     android:id="@+id/guideline3"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     app:layout_constraintGuide_end="220dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
